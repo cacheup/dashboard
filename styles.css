@@ -16,7 +16,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 3fr 17fr;
+  grid-template-rows: 19% auto;
   height: 100%;
 }
 
@@ -39,7 +39,7 @@ ul {
   padding-left: 10px;
 }
 
-span {
+.sidebar span {
   margin-right: 20px;
 }
 
@@ -54,6 +54,74 @@ ul span {
 .header {
   grid-column: 2;
   display: grid;
+  align-content: space-around;
+  border: 1px solid black;
+}
+
+.top {
+  display: grid;
+  grid-auto-flow: column;
+  padding-left: 35px;
+  padding-right: 70px;
+  grid-template-columns: 3fr 1fr;
+}
+
+.top .search {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  column-gap: 12px;
+  align-items: center;
+}
+
+.top .right {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  align-items: center;
+  column-gap: 25px;
+}
+
+.top .avatar {
+  height: 32px;
+  width: 32px;
+  outline: 1px solid black;
+}
+
+input {
+  width: 850px;
+}
+
+.bottom {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  padding-left: 35px;
+  padding-right: 65px;
+  grid-template-columns: 1fr;
+  column-gap: 35px;
+}
+
+.bottom .avatar {
+  width: 55px;
+  height: 55px;
+  border: 1px solid black;
+}
+
+.bottom .left {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  column-gap: 15px;
+}
+
+.bottom .user-info {
+  display: grid;
+  align-items: center;
+}
+
+.bottom button {
+  width: 64px;
 }
 
 .main-content {
