@@ -132,6 +132,7 @@ input {
   padding-top: 25px;
   padding-bottom: 25px;
   padding-right: 22px;
+  row-gap: 30px;
 }
 
 .projects {
@@ -168,6 +169,20 @@ h3 {
 
 .announcements {
   grid-column: 2;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.announcements .posts {
+  border: 1px solid black;
+  padding: 30px;
+  display: grid;
+  align-content: space-between;
+}
+
+hr {
+  margin: 0;
+  height: 0;
 }
 
 .trending {
