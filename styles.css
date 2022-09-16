@@ -74,14 +74,14 @@ ul {
   grid-column: 2;
   display: grid;
   align-content: space-around;
-  border: 1px solid black;
+  box-shadow: 2px 2px 4px 2px #ccd1d8;
 }
 
 .top {
   display: grid;
   grid-auto-flow: column;
-  padding-left: 35px;
-  padding-right: 70px;
+  padding-left: 60px;
+  padding-right: 100px;
   grid-template-columns: 3fr 1fr;
 }
 
@@ -89,7 +89,7 @@ ul {
   display: grid;
   grid-auto-flow: column;
   justify-content: start;
-  column-gap: 12px;
+  column-gap: 18px;
   align-items: center;
 }
 
@@ -98,54 +98,105 @@ ul {
   grid-auto-flow: column;
   justify-content: end;
   align-items: center;
-  column-gap: 25px;
+  column-gap: 46px;
+}
+
+.top svg {
+  fill: black;
+  margin-right: 0;
+}
+
+.top svg:hover {
+  fill: #1992D4;
+}
+
+.top img {
+  width: 45px;
 }
 
 .top .avatar {
-  height: 32px;
-  width: 32px;
-  outline: 1px solid black;
+  width: 57px;
+  height: 57px;
+  background-color: #FACC15;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+
+.top p {
+  font-weight: bold;
+  font-size: 22px;
 }
 
 input {
-  width: 850px;
+  appearance: none;
+  width: 765px;
+  background-color: #E2E8F0;
+  height: 36px;
+  border-radius: 14px;
+  border-style: none;
+  padding: 2px 8px;
 }
 
 .bottom {
   display: grid;
   grid-auto-flow: column;
   align-items: center;
-  padding-left: 35px;
-  padding-right: 65px;
+  padding-left: 60px;
+  padding-right: 80px;
   grid-template-columns: 1fr;
   column-gap: 35px;
 }
 
 .bottom .avatar {
-  width: 55px;
-  height: 55px;
-  border: 1px solid black;
+  width: 80px;
+  height: 80px;
+  background-color: #FACC15;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+
+.bottom img {
+  width: 65px;
 }
 
 .bottom .left {
   display: grid;
   grid-auto-flow: column;
   justify-content: start;
-  column-gap: 15px;
+  column-gap: 25px;
 }
 
 .bottom .user-info {
   display: grid;
-  align-items: center;
+  align-content: center;
+  row-gap: 7px;
+  font-weight: bold;
+}
+
+.bottom .user-info:last-child {
+  font-size: 26px;
+}
+
+.user-info .greeting {
+  font-size: 16px;
 }
 
 .bottom button {
-  width: 64px;
+  width: 130px;
+  height: 40px;
+  color: white;
+  background-color:#1992D4;
+  font-weight: bold;
+  border-radius: 20px;
+  border-style: none;
+  cursor: pointer;
 }
 
 .main-content {
   display: grid;
-  grid-template-columns: 14fr 5fr;
+  grid-template-columns: 7fr 3fr;
   grid-template-rows: 1fr 1fr;
   padding-left: 22px;
   column-gap: 25px;
