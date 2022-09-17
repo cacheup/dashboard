@@ -273,10 +273,21 @@ h3 {
 }
 
 .announcements .posts {
-  border: 1px solid black;
-  padding: 30px;
+  padding: 35px;
   display: grid;
   align-content: space-between;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px 2px #ccd1d8
+}
+
+.posts .title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.posts .description {
+  font-size: 16px;
 }
 
 hr {
