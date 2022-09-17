@@ -75,6 +75,7 @@ ul {
   display: grid;
   align-content: space-around;
   box-shadow: 2px 2px 4px 2px #ccd1d8;
+  z-index: 1;
 }
 
 .top {
@@ -198,12 +199,13 @@ input {
   display: grid;
   grid-template-columns: 7fr 3fr;
   grid-template-rows: 1fr 1fr;
-  padding-left: 22px;
-  column-gap: 25px;
+  padding-left: 30px;
+  column-gap: 30px;
   padding-top: 25px;
   padding-bottom: 25px;
-  padding-right: 25px;
+  padding-right: 30px;
   row-gap: 30px;
+  background-color:#E2E8F0;
 }
 
 .projects {
@@ -215,27 +217,53 @@ input {
 h3 {
   margin: 0;
   margin-bottom: 10px;
+  font-size: 24px;
 }
 
 .cards {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: repeat(2, minmax(380px, 550px));
-  gap: 30px;
+  gap: 35px;
 }
 
 .card {
   border: 1px solid black;
-  padding: 20px;
+  padding: 30px;
   display: grid;
+  background-color: white;
+  border-style: none none none solid;
+  border-left-color: #F0B429;
+  border-left-width: 10px;
+  grid-template-rows: auto 1fr;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px 2px #ccd1d8;
 }
- 
+
+.card .project-name {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.card .description {
+  font-size: 20px;
+}
+
 .widgets {
   display: grid;
   grid-auto-flow: column;
   justify-content: end;
   column-gap: 25px;
   align-self: end;
+}
+
+.widgets svg {
+  fill: black;
+  margin-right: 0;
+}
+
+.widgets svg:hover {
+  fill:#1992D4;
 }
 
 .announcements {
