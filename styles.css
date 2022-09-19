@@ -302,17 +302,58 @@ hr {
 }
 
 .trending-projects {
-  border: 1px solid black;
   display: grid;
   grid-template-columns: auto auto;
   justify-content: start;
-  padding: 30px;
-  column-gap: 25px;
+  padding: 32px;
+  column-gap: 28px;
   align-items: center;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px 2px #ccd1d8
+}
+
+.trending-projects .handle {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.trending-projects .project {
+  font-size: 20px;
 }
 
 .trending .avatar {
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+
+.trending-projects img {
   width: 45px;
-  height: 45px;
-  border: 1px solid black;
+}
+
+.trending-projects #penguin img {
+  width: 35px;
+}
+
+.trending-projects #superhero img {
+  width: 30px;
+}
+
+.trending-projects #dog {
+  background-color: #E0F2FE;
+}
+
+.trending-projects #cat {
+  background-color:#FACC15;
+}
+
+.trending-projects #superhero {
+  background-color: #A3A3A3;
+}
+
+.trending-projects #penguin {
+  background-color: #FDA4AF;
 }
